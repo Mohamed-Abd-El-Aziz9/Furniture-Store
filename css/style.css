@@ -1,0 +1,241 @@
+@font-face {
+    font-family: Arlon;
+    src: url("../ArlonSemiBold-DEMO.otf");
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+}
+
+.header {
+    background-color: #5E606C;
+    color: white;
+}
+
+.logo {
+    font-family: Arlon;
+    font-weight: lighter;
+}
+
+header .head {
+    border-bottom: 1px solid gray;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.navbar-section {
+    height: fit-content;
+    padding: 50px;
+
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list span {
+    color: white;
+}
+
+.nav-list li {
+    color: gray;
+}
+link svg {
+    background-color: wheat;
+}
+.nav-drop {
+    border-right: 1px solid gray;
+}
+
+
+/*===================Home Section ================*/
+#home {}
+
+.slider {
+    height: 100vh;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+#slider1 {
+    background-image: url("../images/slide-1-1.jpg");
+}
+
+#slider2 {
+    background-image: url("../images/slide-2.jpg");
+}
+
+#slider3 {
+    background-image: url("../images/slide-3-1.jpg");
+}
+
+.slider-h1 {
+    font-size: 2.5rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #5E606C !important;
+}
+
+/*====================About us============*/
+
+.about {
+    background-color: #F0F0F0;
+    height: fit-content;
+    background-image: url("../images/bg-1-1.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.about-content {
+    position: relative;
+
+}
+
+.about-content::before {
+    content: "";
+    height: 1px;
+    background-color: rgba(94, 96, 108);
+    width: 0%;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    transition: all 1s;
+}
+
+.about-content:hover.about-content::before {
+    width: 100%;
+    right: 0px;
+
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+/*====================offers============*/
+.offers {
+    background-image: linear-gradient(to bottom, #000000, #393939, #737373, #b2b2b2, #f5f5f5);
+}
+
+.flip-card {
+    position: relative;
+    perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: relative;
+    perspective: 1000px;
+
+}
+.flip-card-back {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    perspective: 1000px;
+
+}
+
+
+.flip-card-back {
+    backface-visibility: hidden;
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    backface-visibility: hidden;
+    
+
+
+}
+
+.flip-card-front .content {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: black;
+}
+.flip-card-front .content span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.flip-card-front .conten h1 {
+    font-size: 18px;
+}
+
+/* Style the back side */
+.flip-card-back {
+    color: #bbb;
+    background-color: rgba(0, 0, 0, .7);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back .btn {
+    background-color: white;
+    padding: 10px 30px;
+    outline: none !important;
+    color: black !important;
+}
+.flip-card-back h1 {
+    font-size: 25px;
+}
+.flip-card-back p {
+    font-size: .9rem;
+}
+.flip-card-back span {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.testmonolgy {
+    background-image: url("../images/bg-3-1.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.news {
+    background-color: #dcdee2;
+}
+
+footer {
+    background-color: #5E606C;
+}
